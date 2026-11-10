@@ -1,7 +1,7 @@
-import purgecss from '@fullhuman/postcss-purgecss'
+import { purgeCSSPlugin } from '@fullhuman/postcss-purgecss'
 
 export default {
-  plugins: [purgecss({
+  plugins: [purgeCSSPlugin({
     content: ['./index.html', './src/**/*.{js,html}'],
     safelist: { standard: [/^is-/] },
   })],
